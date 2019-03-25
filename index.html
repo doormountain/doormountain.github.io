@@ -8,8 +8,46 @@
         <meta name="google" content="notranslate">
         <title>DoorMounTain</title>
         <style>
+            .container {
+                position: relative;
+                width: 100%;
+            }
+
+            .image {
+                opacity: 1;
+                display: block;
+                width: 100%;
+                height: auto;
+                transition: .5s ease;
+                backface-visibility: hidden;
+            }
+
+            .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%)
+            }
+
+            .container:hover .image {
+                opacity: 0.3;
+            }
+
+            .container:hover .middle {
+                opacity: .5;
+            }
+
+            .text {
+                color: white;
+                font-size: 44.4px;
+                text-shadow: 0px 0px 8px rgb(130, 209, 203);
+            }
+            
             body {
-                color: rgb(130, 209, 203);
+                color: white;
                 font-family: 'Mukta', sans-serif;
             }
             
@@ -17,43 +55,46 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width: 66.6%;
-                box-shadow: 0px 0px 50px #fff;
+                margin-top: 44.4px;
+                width: 44.4%;
+                box-shadow: 0px 0px 23px rgb(130, 209, 203);
+                border-radius: 1%;
             }
 
             div.a {
                 text-align: center;
-                text-shadow: -10px -10px 8px pink, 10px 10px 8px lightblue;
+                text-shadow: 0px 0px 8px rgb(130, 209, 203);
+                margin-top: 44.4px
 
             }
 
             a:link {
-                color: gold;
+                color: white;
                 text-decoration: none;
 
             }
 
             a:visited {
-                color: rgb(130, 209, 203);
+                color: white;
             }
 
             a:hover {
-                color: whitesmoke;
-            }
-
-            /* a:active {
-                color: black; */
+                color: rgb(130, 209, 203);
             }
         </style>
     </head>
     <body style="background-color:black;">
+        
+    <div class="container">
+        <a href="paths.html"><img src="soleil-noir-33-percent.jpg" alt="PathsCover"></a>
+        <div class="middle">
+            <div class="text">click to enter</div>
+        </div>
+    </div>
         <div class="a">
-            <a href="paths.html"><img src="soleil-noir-33-percent.jpg" alt="PathsCover"></a>
-            <br>
+            
             <h1><a href="paths.html">YOU ARE NOW ENTERING DOOR MOUNTAIN</a></h1>
-            <br>
             <h1><a href="paths.html">DALETH + MEM + TAU</a></h1>
-            <br>
             <h1><a href="paths.html">444</a></h1>
         </div>
     </body>
