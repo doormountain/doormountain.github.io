@@ -3,31 +3,78 @@
     <head>
         <link rel="shortcut icon" href="https://f4.bcbits.com/img/a0721941895_3.jpg">
         <link rel="apple-touch-icon" href="https://f4.bcbits.com/img/a0721941895_3.jpg">
+        <link href="https://free.bboxtype.com/embedfonts/?family=FiraSans:100,500" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="resources/css/paths.css">
         <meta charset="utf-8">
         <meta name="google" content="notranslate">
         <title>DoorMounTain</title>
         <base target="_blank">
-        <link rel="stylesheet" type="text/css" href="paths.css">
     </head>
     <body style="background-color:black;">
-        <img id="paths-cover" src="paths_cover_small.jpg" alt="PathsCover">
-        <div class="a">
-            <br><br><br>
-            <h1>PATHS</h1>
-            <br>
-            <h2 id="the-kingdom">The Kingdom (<a href="pdf/The%20Kingdom.pdf">pdf</a>, <a href="txt/The%20Kingdom.txt">txt</a>)</h2>
-            <h2 id="the-emperor">The Emperor (<a href="pdf/The%20Emperor.pdf">pdf</a>, <a href="txt/The%20Emperor.txt">txt</a>)</h2>
-            <h2 id="eleusis">Eleusis (<a href="pdf/Eleusis.pdf">pdf</a>, <a href="txt/Eleusis.txt">txt</a>)</h2>
-            <h2 id="eye-of-giza">Eye of Giza (<a href="pdf/Eye%20of%20Giza.pdf">pdf</a>, <a href="txt/Eye%20of%20Giza.txt">txt</a>)</h2>
-            <h2 id="mountain-dweller">Mountain Dweller (<a href="pdf/Mountain%20Dweller.pdf">pdf</a>, <a href="txt/Mountain%20Dweller.txt">txt</a>)</h2>
-            <h2 id="the-hierophant">The Hierophant (<a href="pdf/The%20Hierophant.pdf">pdf</a>, <a href="txt/The%20Hierophant.txt">txt</a>)</h2>
-            <h2 id="the-star">The Star (<a href="pdf/The%20Star.pdf">pdf</a>, <a href="txt/The%20Star.txt">txt</a>)</h2>
-            <h2 id="merge">Merge (<a href="pdf/Merge.pdf">pdf</a>, <a href="txt/Merge.txt">txt</a>)</h2>
-            <br><br><br><h5><a href="mailto:doormountainmusic@gmail.com" target="_top">email</a></h5>
-            <h5><a href="https://soundcloud.com/doormountain">soundcloud</a></h5>
-            <h5><a href="https://doormountain.bandcamp.com/">bandcamp</a></h5>
-            <h5><a href="https://distrokid.com/hyperfollow/doormountain/fPDA">spotify</a></h5>
-            <h5><a href="https://www.facebook.com/doormountainmusic/">facebook</a></h5>
+        <svg id="fader" style='display:none'></svg>
+        <script type='text/javascript'>
+            document.getElementById('fader').style.display='block';
+        </script>
+        <script>
+            fadeInPage();
+
+            function fadeInPage() {
+                if (!window.AnimationEvent) { return; }
+                var fader = document.getElementById('fader');
+                fader.classList.add('fade-out');
+            }
+        </script>
+        <script type='text/javascript' src='/resources/scripts/fade-in-out.js'></script>
+        <img id="paths-cover" src="resources/img/paths_cover_small.jpg" alt="PathsCover">
+        <div class="paths-text">
+            <h1>
+                <div class='paths'>
+                    Paths
+                </div>
+            </h1>
+            <ul>
+                <li id="the-kingdom">
+                    <div class='song-title'>The Kingdom</div> (<a href="resources/pdf/The%20Kingdom.pdf">pdf</a>, <a href="resources/txt/The%20Kingdom.txt">txt</a>)
+                </li>
+                <li id="the-emperor">
+                    <div class='song-title'>The Emperor</div> (<a href="resources/pdf/The%20Emperor.pdf">pdf</a>, <a href="resources/txt/The%20Emperor.txt">txt</a>)
+                </li>
+                <li id="eleusis">
+                    <div class='song-title'>Eleusis</div> (<a href="resources/pdf/Eleusis.pdf">pdf</a>, <a href="resources/txt/Eleusis.txt">txt</a>)
+                </li>
+                <li id="eye-of-giza">
+                    <div class='song-title'>Eye of Giza</div> (<a href="resources/pdf/Eye%20of%20Giza.pdf">pdf</a>, <a href="resources/txt/Eye%20of%20Giza.txt">txt</a>)
+                </li>
+                <li id="mountain-dweller">
+                    <div class='song-title'>Mountain Dweller</div> (<a href="resources/pdf/Mountain%20Dweller.pdf">pdf</a>, <a href="resources/txt/Mountain%20Dweller.txt">txt</a>)
+                </li>
+                <li id="the-hierophant">
+                    <div class='song-title'>The Hierophant</div> (<a href="resources/pdf/The%20Hierophant.pdf">pdf</a>, <a href="resources/txt/The%20Hierophant.txt">txt</a>)
+                </li>
+                <li id="the-star">
+                    <div class='song-title'>The Star</div> (<a href="resources/pdf/The%20Star.pdf">pdf</a>, <a href="resources/txt/The%20Star.txt">txt</a>)
+                </li>
+                <li id="merge">
+                    <div class='song-title'>Merge</div> (<a href="resources/pdf/Merge.pdf">pdf</a>, <a href="resources/txt/Merge.txt">txt</a>)
+                </li>
+            </ul>
+            <div class='external-links'>
+                <h5>
+                    <a href="mailto:doormountainmusic@gmail.com" target="_top">email</a>
+                </h5>
+                <h5>
+                    <a href="https://soundcloud.com/doormountain">soundcloud</a>
+                </h5>
+                <h5>
+                    <a href="https://doormountain.bandcamp.com/">bandcamp</a>
+                </h5>
+                <h5>
+                    <a href="https://distrokid.com/hyperfollow/doormountain/fPDA">spotify</a>
+                </h5>
+                <h5>
+                    <a href="https://www.facebook.com/doormountainmusic/">facebook</a>
+                </h5>
+            </div>
         </div>
     </body>
 </html>

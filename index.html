@@ -3,23 +3,42 @@
     <head>
         <link rel="shortcut icon" href="https://f4.bcbits.com/img/a0721941895_3.jpg">
         <link rel="apple-touch-icon" href="https://f4.bcbits.com/img/a0721941895_3.jpg">
-        <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+        <link href="https://free.bboxtype.com/embedfonts/?family=FiraSans:100,500" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="resources/css/index.css">
         <meta charset="utf-8">
         <meta name="google" content="notranslate">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">    
         <title>DoorMounTain</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
-    <body style="background-color:black;">
-    <div class="container">
-        <a href="paths.html"><img id="main-image" src="soleil-noir-33-percent.jpg" alt="PathsCover"></a>
-        <div class="middle">
-            <div class="text">click to enter</div>
-        </div>
-    </div>
-        <div class="a">            
-            <h1><a href="paths.html">YOU ARE NOW ENTERING DOOR MOUNTAIN</a></h1>
-            <h1><a href="paths.html">DALETH + MEM + TAU</a></h1>
-            <h1><a href="paths.html">444</a></h1>
-        </div>
+    <body>
+        <svg id="fader" style='display:none'></svg>
+        <script type='text/javascript'>
+            document.getElementById('fader').style.display='block';
+        </script>
+        <script>
+            fadeInPage();
+
+            function fadeInPage() {
+                if (!window.AnimationEvent) { return; }
+                var fader = document.getElementById('fader');
+                fader.classList.add('fade-out');
+            };
+        </script>
+        <script type='text/javascript' src='/resources/scripts/fade-in-out.js'></script>
+        <a href="paths.html" class='entry-link'>
+            <div class="container">
+                <div id="main-image" alt="PathsCover">
+                </div>
+                <div id="overlay">
+                    &#9764
+                </div>
+            </div>    
+            <div class="entry-text">
+                <h2>You are now entering</h2> <h1>Door Mountain</h1>
+                <h2>Daleth + Mem + Tau</h2>
+                <h3>444</h3>
+            </div>
+        </a>
     </body>
 </html>
