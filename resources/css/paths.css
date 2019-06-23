@@ -30,7 +30,8 @@ body {
 
     .song-title:hover {
         color: white;
-        font-size: 3.11rem;
+        /* font-size: 3.11rem; */
+        letter-spacing: .231em;
     }
 }
 
@@ -45,7 +46,8 @@ body {
 
     .song-title:hover {
         color: white;
-        font-size: 2.62rem;
+        /* font-size: 2.62rem; */
+        /* letter-spacing: .111em; */
     }
 }
 
@@ -213,12 +215,11 @@ a, .paths-text:link {
     width: 0px;
 }
 
-
-
 .levitate {
     animation-name: levitate;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes levitate {
     0%   { 
         transform: scale3d(1, 1, 1);
