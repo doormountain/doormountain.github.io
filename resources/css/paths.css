@@ -4,7 +4,6 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
-    /* border: 1px solid white; */
 }
 
 :root {
@@ -30,7 +29,6 @@ body {
 
     .song-title:hover {
         color: white;
-        /* font-size: 3.11rem; */
         letter-spacing: .231em;
     }
 }
@@ -46,14 +44,11 @@ body {
 
     .song-title:hover {
         color: white;
-        /* font-size: 2.62rem; */
-        /* letter-spacing: .111em; */
     }
 }
 
 ul {
     list-style-type: none;
-    /* margin-left: 4rem; */
     margin-block-start: 0;
     padding-inline-start: 0;
     margin-block-end: 0;
