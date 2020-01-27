@@ -1,228 +1,201 @@
-html {
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 :root {
-    --shadow-blur-px: 18px;
+  --shadow-blur-px: 18px;
 }
 
 body {
-    background-color: #040404;
-    font-family: 'Fira Sans', sans-serif;
-    color: antiquewhite;
-    text-rendering: optimizeLegibility;
-    font-feature-settings: "kern" 1;
-}
-
-@media screen and (min-width: 601px) {
-    li {
-        font-size: 1.31rem;
-    }
-
-    .song-title {
-        font-size: 2.62rem;
-    }
-
-    .song-title:hover {
-        color: white;
-        letter-spacing: .231em;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    li {
-        font-size: .8rem;   
-    }
-
-    .song-title {
-        font-size: 2.12rem;
-    }
-
-    .song-title:hover {
-        color: white;
-    }
+  background-color: #040404;
+  font-family: "Fira Sans", sans-serif;
+  color: antiquewhite;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
 }
 
 ul {
-    list-style-type: none;
-    margin-block-start: 0;
-    padding-inline-start: 0;
-    margin-block-end: 0;
+  list-style-type: none;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  margin-block-end: 0;
 }
 
 li {
-    font-weight: 100;
-    letter-spacing: .131em;
-    line-height: 1.31;
-}
-
-.song-title {
-    font-weight: 500;
-    display: inline;
-    text-align: center;
-    transition: all 1s ease-out;
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 0.131em;
+  line-height: 1.31;
 }
 
 h5 {
-    font-weight: 100;
-    color: rgb(126, 120, 111);
-    font-size: 2.2rem;
-    letter-spacing: .09em;
-    line-height: .111;
-    font-weight: 100;
-    text-shadow: 0px 0px var(--shadow-blur-px) rgb(130, 209, 203);
+  color: rgb(126, 120, 111);
+  font-size: 2.2rem;
+  letter-spacing: 0.09em;
+  line-height: 0.111;
+  font-weight: 100;
+  text-shadow: 0px 0px var(--shadow-blur-px) rgb(130, 209, 203);
 }
 
-#the-kingdom {
-    text-shadow: 0px 0px var(--shadow-blur-px) red
+a {
+  color: antiquewhite;
+  text-decoration: none;
 }
 
-#the-emperor {
-    text-shadow: 0px 0px var(--shadow-blur-px) orange
+.song-title {
+  font-weight: 500;
+  display: inline;
+  text-align: center;
+  transition: all 1s ease-out;
+  font-size: 2.12rem;
 }
 
-#eleusis {
-    text-shadow: 0px 0px var(--shadow-blur-px) yellow
+.song-title:hover {
+  color: white;
 }
 
-#eye-of-giza {
-    text-shadow: 0px 0px var(--shadow-blur-px) limegreen
+.the-kingdom {
+  text-shadow: 0px 0px var(--shadow-blur-px) red;
 }
 
-#mountain-dweller {
-    text-shadow: 0px 0px var(--shadow-blur-px) skyblue
+.the-emperor {
+  text-shadow: 0px 0px var(--shadow-blur-px) orange;
 }
 
-#the-hierophant {
-    text-shadow: 0px 0px var(--shadow-blur-px) violet
+.eleusis {
+  text-shadow: 0px 0px var(--shadow-blur-px) yellow;
 }
 
-#the-star {
-    text-shadow: 0px 0px var(--shadow-blur-px) pink
+.eye-of-giza {
+  text-shadow: 0px 0px var(--shadow-blur-px) limegreen;
 }
 
-#merge {
-    text-shadow: 0px 0px var(--shadow-blur-px) antiquewhite
+.mountain-dweller {
+  text-shadow: 0px 0px var(--shadow-blur-px) skyblue;
 }
 
-#paths-cover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 0px 20px rgb(130, 209, 203);
-    margin-top: 44px;
-    max-width: 80vw;
+.the-hierophant {
+  text-shadow: 0px 0px var(--shadow-blur-px) violet;
+}
+
+.the-star {
+  text-shadow: 0px 0px var(--shadow-blur-px) pink;
+}
+
+.merge {
+  text-shadow: 0px 0px var(--shadow-blur-px) antiquewhite;
+}
+
+.paths-cover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 20px rgb(130, 209, 203);
+  margin-top: 44px;
+  max-width: 80vw;
 }
 
 .paths-text {
-    text-align: center;
-    /* margin-left: 1.2rem; */
+  text-align: center;
 }
 
-a, .paths-text:link {
-    color: antiquewhite;
-    text-decoration: none;
-}
-
-.paths-text:visited {
-    color: antiquewhite;
-}
-
-.paths-text:hover {
-    color: antiquewhite;
-}
-
-#paths-cover {
-    margin-top: 4.34rem;
+.paths-cover {
+  margin-top: 4.34rem;
 }
 
 .paths {
-    margin-top: 4.44rem;
-    margin-left: 1.2rem;
-    margin-bottom: 3.33rem;
-    font-weight: 100;
-    letter-spacing: .22em;
-    font-size: 4.2rem;
-    text-shadow: 0px 0px 40px rgb(130, 209, 203), 0px 0px 4px rgb(130, 209, 203);
-    font-variant-caps: small-caps;
-    font-feature-settings: "smcp";
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+  margin-top: 4.44rem;
+  margin-left: 1.2rem;
+  margin-bottom: 3.33rem;
+  font-weight: 100;
+  letter-spacing: 0.22em;
+  font-size: 4.2rem;
+  text-shadow: 0px 0px 40px rgb(130, 209, 203), 0px 0px 4px rgb(130, 209, 203);
+  font-variant-caps: small-caps;
+  font-feature-settings: "smcp";
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
 .paths-tracks {
-    margin-top: 3.33rem;
+  margin-top: 3.33rem;
 }
 
 .external-link {
-    margin-top: 4.44em;
-    transition: all .444s ease-in;
-    opacity: 1;
-}
-
-@media screen and (min-width: 601px) {
-    .external-link:hover {
-        color: grey;
-        opacity: .5;
-        font-size: 2.0rem;
-    }
+  margin-top: 4.44em;
+  transition: all 0.444s ease-in;
+  opacity: 1;
 }
 
 #fader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999;
-    pointer-events: none;
-    background: black;
-    animation-duration: 444ms;
-    animation-timing-function: ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: black;
+  animation-duration: 444ms;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fade-out {
-    from { opacity: 1 }
-    to { opacity: 0 }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
-    from { opacity: 0 }
-    to { opacity: 1 }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #fader.fade-out {
-    opacity: 0;
-    animation-name: fade-out;
+  opacity: 0;
+  animation-name: fade-out;
 }
 
 #fader.fade-in {
-    opacity: 1;
-    animation-name: fade-in;
+  opacity: 1;
+  animation-name: fade-in;
 }
 
 .center-blind {
-    display: inline-block;
-    width: 0px;
+  display: inline-block;
+  width: 0px;
 }
 
-.levitate {
-    animation-name: levitate;
-    animation-timing-function: ease-in-out;
-}
+@media screen and (min-width: 600px) {
+  .external-link:hover {
+    color: grey;
+    opacity: 0.5;
+    font-size: 2rem;
+  }
 
-@keyframes levitate {
-    0%   { 
-        transform: scale3d(1, 1, 1);
-    }
-    50%  { 
-        transform: scale3d(1.05, .95, 1.05);
-    }
-    100% { 
-        transform: scale3d(1, 1, 1);
-    }
+  li {
+    font-size: 1.31rem;
+  }
+
+  .song-title {
+    font-size: 2.62rem;
+  }
+
+  .song-title:hover {
+    color: white;
+    letter-spacing: 0.231em;
+  }
 }

@@ -1,81 +1,197 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" dir="ltr">
-    <head>
-        <link rel="shortcut icon" href="https://f4.bcbits.com/img/a0721941895_3.jpg">
-        <link rel="apple-touch-icon" href="https://f4.bcbits.com/img/a0721941895_3.jpg">
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="resources/css/paths.css">
-        <meta charset="utf-8">
-        <meta name="google" content="notranslate">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <meta name="description" content="The official website of DoorMounTain - songs related to the spheres and paths of the tree of life.">
-        <title>DoorMounTain => “Paths”</title>
-        <base target="_blank">
-    </head>
-    <body style="background-color:black;">
-        <svg id="fader" style='display:none'></svg>
-        <script type='text/javascript'>
-            document.getElementById('fader').style.display='block';
-        </script>
-        <script>
-            fadeInPage();
-
-            function fadeInPage() {
-                if (!window.AnimationEvent) { return; }
-                var fader = document.getElementById('fader');
-                fader.classList.add('fade-out');
-            }
-        </script>
-        <img id="paths-cover" src="resources/img/paths_cover_small.jpg" alt="PathsCover">
-        <div class="paths-text">
-            <h1>
-                <div class='levitate paths'>
-                    Paths
-                </div>
-            </h1>
-            <ul>
-                <li id="the-kingdom">
-                    <a class='song-title' href="https://doormountain.bandcamp.com/track/the-kingdom">The Kingdom</a> <div class="center-blind">(<a href="resources/pdf/The%20Kingdom.pdf">pdf</a>,<a href="resources/txt/The%20Kingdom.txt">txt</a>)</div>
-                </li>
-                <li id="the-emperor">
-                    <a class='song-title' href="https://doormountain.bandcamp.com/track/the-emperor">The Emperor</a> <div class="center-blind">(<a href="resources/pdf/The%20Emperor.pdf">pdf</a>,<a href="resources/txt/The%20Emperor.txt">txt</a>)</div>
-                </li>
-                <li id="eleusis">
-                    <a class='song-title' href="https://doormountain.bandcamp.com/track/eleusis">Eleusis</a> <div class="center-blind">(<a href="resources/pdf/Eleusis.pdf">pdf</a>,<a href="resources/txt/Eleusis.txt">txt</a>)</div>
-                </li>
-                <li id="eye-of-giza">
-                    <a class='song-title' href="https://doormountain.bandcamp.com/track/eye-of-giza">Eye of Giza</a> <div class="center-blind">(<a href="resources/pdf/Eye%20of%20Giza.pdf">pdf</a>,<a href="resources/txt/Eye%20of%20Giza.txt">txt</a>)</div>
-                </li>
-                <li id="mountain-dweller">
-                    <a class='song-title' href="https://doormountain.bandcamp.com/track/mountain-dweller">Mountain Dweller</a> <div class="center-blind">(<a href="resources/pdf/Mountain%20Dweller.pdf">pdf</a>,<a href="resources/txt/Mountain%20Dweller.txt">txt</a>)</div>
-                </li>
-                <li id="the-hierophant">
-                    <a class='song-title' href="https://doormountain.bandcamp.com/track/the-hierophant">The Hierophant</a> <div class="center-blind">(<a href="resources/pdf/The%20Hierophant.pdf">pdf</a>,<a href="resources/txt/The%20Hierophant.txt">txt</a>)</div>
-                </li>
-                <li id="the-star">
-                    <a class='song-title' href="https://doormountain.bandcamp.com/track/the-star">The Star</a> <div class="center-blind">(<a href="resources/pdf/The%20Star.pdf">pdf</a>,<a href="resources/txt/The%20Star.txt">txt</a>)</div>
-                </li>
-                <li id="merge">
-                    <a class='song-title' href="https://doormountain.bandcamp.com/track/merge">Merge</a> <div class="center-blind">(<a href="resources/pdf/Merge.pdf">pdf</a>,<a href="resources/txt/Merge.txt">txt</a>)</div>
-                </li>
-            </ul>
-            <div class='external-links'>
-                <h5>
-                    <a class='external-link' href="mailto:doormountainmusic@gmail.com" target="_top">email</a>
-                </h5>
-                <h5>
-                    <a class='external-link' href="https://soundcloud.com/doormountain">soundcloud</a>
-                </h5>
-                <h5>
-                    <a class='external-link' href="https://doormountain.bandcamp.com/">bandcamp</a>
-                </h5>
-                <h5>
-                    <a class='external-link' href="https://open.spotify.com/album/4IZAOhfWg7L6V2SoPz7Oq5">spotify</a>
-                </h5>
-                <h5>
-                    <a class='external-link' href="https://www.facebook.com/doormountainmusic/">facebook</a>
-                </h5>
-            </div>
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://f4.bcbits.com/img/a0721941895_3.jpg"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://f4.bcbits.com/img/a0721941895_3.jpg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:100,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="resources/css/paths.css" />
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta
+      name="description"
+      content="The official website of DoorMounTain - songs related to the spheres and paths of the tree of life."
+    />
+    <title>DoorMounTain => “Paths”</title>
+    <base target="_blank" />
+  </head>
+  <body style="background-color:black;">
+    <svg id="fader" style="display:none"></svg>
+    <script type="text/javascript">
+      document.getElementById("fader").style.display = "block";
+    </script>
+    <script>
+      (function fadeInPage() {
+        if (!window.AnimationEvent) {
+          return;
+        }
+        var fader = document.getElementById("fader");
+        fader.classList.add("fade-out");
+      })();
+    </script>
+    <img
+      class="paths-cover"
+      src="resources/img/paths_cover_small.jpg"
+      alt="PathsCover"
+    />
+    <div class="paths-text">
+      <h1>
+        <div class="paths">
+          Paths
         </div>
-    </body>
+      </h1>
+      <ul>
+        <li class="the-kingdom">
+          <a
+            class="song-title"
+            href="https://doormountain.bandcamp.com/track/the-kingdom"
+            >The Kingdom</a
+          >
+          <div class="center-blind">
+            (<a href="resources/pdf/The%20Kingdom.pdf">pdf</a>,<a
+              href="resources/txt/The%20Kingdom.txt"
+              >txt</a
+            >)
+          </div>
+        </li>
+        <li class="the-emperor">
+          <a
+            class="song-title"
+            href="https://doormountain.bandcamp.com/track/the-emperor"
+            >The Emperor</a
+          >
+          <div class="center-blind">
+            (<a href="resources/pdf/The%20Emperor.pdf">pdf</a>,<a
+              href="resources/txt/The%20Emperor.txt"
+              >txt</a
+            >)
+          </div>
+        </li>
+        <li class="eleusis">
+          <a
+            class="song-title"
+            href="https://doormountain.bandcamp.com/track/eleusis"
+            >Eleusis</a
+          >
+          <div class="center-blind">
+            (<a href="resources/pdf/Eleusis.pdf">pdf</a>,<a
+              href="resources/txt/Eleusis.txt"
+              >txt</a
+            >)
+          </div>
+        </li>
+        <li class="eye-of-giza">
+          <a
+            class="song-title"
+            href="https://doormountain.bandcamp.com/track/eye-of-giza"
+            >Eye of Giza</a
+          >
+          <div class="center-blind">
+            (<a href="resources/pdf/Eye%20of%20Giza.pdf">pdf</a>,<a
+              href="resources/txt/Eye%20of%20Giza.txt"
+              >txt</a
+            >)
+          </div>
+        </li>
+        <li class="mountain-dweller">
+          <a
+            class="song-title"
+            href="https://doormountain.bandcamp.com/track/mountain-dweller"
+            >Mountain Dweller</a
+          >
+          <div class="center-blind">
+            (<a href="resources/pdf/Mountain%20Dweller.pdf">pdf</a>,<a
+              href="resources/txt/Mountain%20Dweller.txt"
+              >txt</a
+            >)
+          </div>
+        </li>
+        <li class="the-hierophant">
+          <a
+            class="song-title"
+            href="https://doormountain.bandcamp.com/track/the-hierophant"
+            >The Hierophant</a
+          >
+          <div class="center-blind">
+            (<a href="resources/pdf/The%20Hierophant.pdf">pdf</a>,<a
+              href="resources/txt/The%20Hierophant.txt"
+              >txt</a
+            >)
+          </div>
+        </li>
+        <li class="the-star">
+          <a
+            class="song-title"
+            href="https://doormountain.bandcamp.com/track/the-star"
+            >The Star</a
+          >
+          <div class="center-blind">
+            (<a href="resources/pdf/The%20Star.pdf">pdf</a>,<a
+              href="resources/txt/The%20Star.txt"
+              >txt</a
+            >)
+          </div>
+        </li>
+        <li class="merge">
+          <a
+            class="song-title"
+            href="https://doormountain.bandcamp.com/track/merge"
+            >Merge</a
+          >
+          <div class="center-blind">
+            (<a href="resources/pdf/Merge.pdf">pdf</a>,<a
+              href="resources/txt/Merge.txt"
+              >txt</a
+            >)
+          </div>
+        </li>
+      </ul>
+      <div class="external-links">
+        <h5>
+          <a
+            class="external-link"
+            href="mailto:doormountainmusic@gmail.com"
+            target="_top"
+            >email</a
+          >
+        </h5>
+        <h5>
+          <a class="external-link" href="https://soundcloud.com/doormountain"
+            >soundcloud</a
+          >
+        </h5>
+        <h5>
+          <a class="external-link" href="https://doormountain.bandcamp.com/"
+            >bandcamp</a
+          >
+        </h5>
+        <h5>
+          <a
+            class="external-link"
+            href="https://open.spotify.com/album/4IZAOhfWg7L6V2SoPz7Oq5"
+            >spotify</a
+          >
+        </h5>
+        <h5>
+          <a
+            class="external-link"
+            href="https://www.facebook.com/doormountainmusic/"
+            >facebook</a
+          >
+        </h5>
+      </div>
+    </div>
+  </body>
 </html>

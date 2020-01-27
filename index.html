@@ -18,16 +18,15 @@
             document.getElementById('fader').style.display='block';
         </script>
         <script>
-            fadeInPage();
-            function fadeInPage() {
+            (function fadeInPage() {
                 if (!window.AnimationEvent) { return; }
                 var fader = document.getElementById('fader');
                 fader.classList.add('fade-out');
-            };
+            })();
         </script>
         <a href="paths.html" class='entry-link'>
             <div class="container">
-                <img src="./resources/img/soleil-noir-33-percent.jpg" id="main-image" alt="Paths Cover">
+                <img src="./resources/img/soleil-noir-33-percent.jpg" id="main-image" alt="Paths Album Cover">
                 </img>
                 <div id="overlay">
                     &#9764
